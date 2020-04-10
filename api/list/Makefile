@@ -1,4 +1,6 @@
-.PHONY: build clean deploy
+.PHONY: custom build clean deploy
+
+custom: build
 
 build:
 	dep ensure -v
