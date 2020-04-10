@@ -1,0 +1,14 @@
+version: 2
+jobs:
+  build:
+    working_directory: /go/src/github.com/gehhilfer/lister/
+    docker:
+      - image: golang:1.14
+    steps:
+      - checkout
+      - run:
+          name: build
+          shell: /bin/bash
+          command: |
+            chmod +x ./build.sh
+            ./build.sh
