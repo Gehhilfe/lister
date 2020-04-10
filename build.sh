@@ -1,5 +1,7 @@
 #!/bin/bash
 
+go get -u github.com/golang/dep/cmd/dep
+
 ### Install awscli. Used for pushing container images to ECR.
 ### You may want to set these environment variables:
 ###
